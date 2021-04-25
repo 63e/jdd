@@ -16,7 +16,7 @@
 
 **脚本兼容: [QuantumultX](https://apps.apple.com/us/app/quantumult-x/id1443988620), [Surge](https://apps.apple.com/us/app/surge-4/id1442620678), [Loon](https://apps.apple.com/us/app/loon/id1373567447), JSBox, Node.js**
 
-**PS**
+**PS：**
 1.  修改了通知方式sever酱变为qmsg酱，函数名字没改
 2.  secret中的PUSH_KEY为qmsg酱的KEY
 3.  修改接收消息的qq以及发送人数需去有发送要求的js中修改
