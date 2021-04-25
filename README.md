@@ -1,5 +1,5 @@
 
-## 京东薅羊毛工具（活动入口：京东app->我的->游戏与互动->查看更多。）
+## 京东薅羊毛工具（活动入口：京东app->我的->休闲游戏->更多工具）
 
 1.  京东水果([jd_fruit.js](https://raw.githubusercontent.com/lxk0301/scripts/master/jd_fruit.js))
 2.  东东萌宠([jd_pet.js](https://raw.githubusercontent.com/lxk0301/scripts/master/jd_pet.js))
@@ -25,20 +25,30 @@
 6.  修改京东多合一签到发送的通知只显示概览
 7.  京小超助力暂时无法使用
 
+## 更多功能请参考[Saver233/joy-jd_scripts](https://github.com/Saver233/joy-jd_scripts)  本仓库自用为主
 
-## 食用方法
+## 修改通知方法
+### 例如：
+	if($.index ===1){
+		await notify.sendNotify(`${$.name}cookie已失效`, `京东账号${$.index} ${UserName}\n请重新登录获取cookie`, 你需要接收的qq1);
+	}else if($.index ===2){
+		await notify.sendNotify(`${$.name}cookie已失效`, `京东账号${$.index} ${UserName}\n请重新登录获取cookie`, 你需要接收的qq2);
+	}
+	······以此类推
+	}
+	
+  - 暂时是[jd_pet.js](jd_pet.js)、[jd_fruit.js](jd_fruit.js)、[jd_shop.js](jd_shop.js)、[jd_unsubscribe.js](jd_unsubscribe.js)、[jd_superMarket.js](jd_superMarket.js)、[jd_blueCoin.js](jd_blueCoin.js)、[jd_bean_sign.js](jd_bean_sign.js)、[jd_club_lottery.js](jd_club_lottery.js)这8个文件需要修改通知。
+## 使用方法
 
 ### 方法一：本地安装Node.js，下载本库脚本
 
   - 教程请见：[EvineDeng/jd-base](https://github.com/EvineDeng/jd-base)
 
-### 方法二：云服务器、腾讯云函数等等
-
-  - 需自行有云服务器，云函数等
+### 方法二：腾讯云函数
 
   - 腾云云函数使用 [简要说明](iCloud.md)
         
-### 方法三：GitHub Action（推荐）
+### 方法三：GitHub Action（自用的是此方法）
 
  - 使用教程暂且可看 [这里](githubAction.md)
  
@@ -48,10 +58,9 @@
 
 #### 注：以上四种运行机制都是Node.js，故您需仔细阅读下面几点
 
-
   - 如果使用方法一与方法二，需自行提供京东cookie填写到 [jdCookie.js](https://github.com/lxk0301/scripts/blob/master/jdCookie.js) 里面
 
-  - 方法三京东cookie不要！不要！不要！填写到 [jdCookie.js](https://github.com/lxk0301/scripts/blob/master/jdCookie.js) 里面
+  - 方法三京东cookie不要填写到 [jdCookie.js](https://github.com/lxk0301/scripts/blob/master/jdCookie.js) 里面，填写到secret中
 
   - 方法四Docker安装Cookie请见各自的说明。
 
