@@ -75,8 +75,9 @@ var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 var xhr = new XMLHttpRequest();
 var msg = encodeURI(text);
 var txt = encodeURI(desp);
+var key = encodeURI(SCKEY);
 console.log(qq);
-var url = `https://qmsg.zendee.cn/send/8f1b2392620310581d40e66c3dfefdc3?msg=${msg}+\n+${txt}&qq=${qq}`;
+var url = `https://qmsg.zendee.cn/send/${key}?msg=${msg}+\n+${txt}&qq=${qq}`;
 //设置请求的类型及url
 xhr.open('post', url, true);
 xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
