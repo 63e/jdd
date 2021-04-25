@@ -95,7 +95,15 @@ async function jdShop() {
       $.setdata('', 'CookieJD2');//cookie失效，故清空cookie。
     }
     if ($.isNode()) {
-      await notify.sendNotify(`${$.name}cookie已失效`, `京东账号${$.index} ${UserName}\n\n请重新登录获取cookie`);
+			if($.index ===1){
+			  await notify.sendNotify(`${$.name}cookie已失效`, `京东账号${$.index} ${UserName}\n请重新登录获取cookie`, 2803242565);
+		   }else if($.index ===2){
+			  await notify.sendNotify(`${$.name}cookie已失效`, `京东账号${$.index} ${UserName}\n请重新登录获取cookie`, 997146461);
+		   }else if($.index ===3){
+			  await notify.sendNotify(`${$.name}cookie已失效`, `京东账号${$.index} ${UserName}\n请重新登录获取cookie`, 1287926334);
+		   }else if($.index ===4){
+			  await notify.sendNotify(`${$.name}cookie已失效`, `京东账号${$.index} ${UserName}\n请重新登录获取cookie`, 1163117714);
+		   }
     }
   }
 }
