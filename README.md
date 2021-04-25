@@ -16,11 +16,6 @@
 
 **脚本兼容: [QuantumultX](https://apps.apple.com/us/app/quantumult-x/id1443988620), [Surge](https://apps.apple.com/us/app/surge-4/id1442620678), [Loon](https://apps.apple.com/us/app/loon/id1373567447), JSBox, Node.js**
 
-**TODO**
-
-- [x] 完善京小超脚本[jd_superMarket.js](https://raw.githubusercontent.com/lxk0301/scripts/master/jd_superMarket.js)
-- [ ] 京小超商圈助力功能[jd_superMarket.js](https://raw.githubusercontent.com/lxk0301/scripts/master/jd_superMarket.js)
-
 **PS**
 1.  修改了通知方式sever酱变为qmsg酱，函数名字没改
 2.  secret中的PUSH_KEY为qmsg酱的KEY
@@ -28,6 +23,8 @@
 4.  各个sharecode需要去相应的sharecode.js中修改添加
 5.  移除了宠汪汪相关，无法使用
 6.  修改京东多合一签到发送的通知只显示概览
+7.  京小超助力暂时无法使用
+
 
 ## 食用方法
 
