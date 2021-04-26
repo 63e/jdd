@@ -40,7 +40,7 @@
 | [jd_club_lottery.js](jd_club_lottery.js) | 1处 |
   - 暂时是这8个文件需要修改通知。
 
-##PS：
+##  PS：
 1.  修改了通知方式sever酱变为qmsg酱，函数名字没改
 2.  secret中的PUSH_KEY为qmsg酱的KEY
 3.  修改接收消息的qq以及发送人数需去有发送要求的js中修改
