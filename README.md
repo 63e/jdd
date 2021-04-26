@@ -18,6 +18,8 @@
 
 **脚本兼容: [QuantumultX](https://apps.apple.com/us/app/quantumult-x/id1443988620), [Surge](https://apps.apple.com/us/app/surge-4/id1442620678), [Loon](https://apps.apple.com/us/app/loon/id1373567447), JSBox, Node.js**
 
+##  仓库使用方法可点[这里](METHOD.md)
+
 ## 修改通知方法
 #### 例如：
 	if($.index ===1){
@@ -48,8 +50,6 @@
 5.  移除了宠汪汪相关，无法使用
 6.  修改京东多合一签到发送的通知只显示概览
 7.  京小超助力暂时无法使用
-
-##  仓库使用方法可点[这里](METHOD.md)
 
 ## 更多功能请参考[Saver233/joy-jd_scripts](https://github.com/Saver233/joy-jd_scripts)
 
