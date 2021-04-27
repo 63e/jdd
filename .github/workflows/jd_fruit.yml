@@ -6,7 +6,7 @@ name: jd_fruit
 on:
   workflow_dispatch:
   schedule:
-    - cron: '02 23,4,10 * * *'
+    - cron: '02 23,1,4,7,10 * * *'
   watch:
     types: started
 
