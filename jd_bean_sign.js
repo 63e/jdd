@@ -61,7 +61,7 @@ if ($.isNode()) {
             // const barkContentEnd = content.indexOf("【左滑 '查看' 以显示签到详情】");
             const barkContentEnd = content.indexOf('【其他总计】');//.length;
             if (barkContentStart > -1 && barkContentEnd > -1) {
-              BarkContent = content.substring(barkContentStart, barkContentEnd+35);
+              BarkContent = content.substring(barkContentStart, barkContentEnd+32);
             }
           }
           //由于在github action上面执行，故执行时间是UTC(国际标准时间)，现转换成北京时间
