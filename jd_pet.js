@@ -1,6 +1,7 @@
 /*
 京东萌宠助手 搬得https://github.com/liuxiaoyucc/jd-helper/blob/master/pet/pet.js
 更新时间:2021-04-25
+第433行
 已支持IOS双京东账号,Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
 // quantumultx
@@ -430,17 +431,17 @@ async function showMsg() {
   if (ctrTemp) {
     $.msg($.name, subTitle, message, option);
     const notifyMessage = message.replace(/[\n\r]/g, '\n\n');
-    if ($.isNode()) {
-       if($.index ===1){
-          await notify.sendNotify(`${$.name} - 账号${$.index} - ${UserName}`, `${subTitle}\n${message}`, 2803242565);
-       }else if($.index ===2){
-          await notify.sendNotify(`${$.name} - 账号${$.index} - ${UserName}`, `${subTitle}\n${message}`, 997146461);
-       }else if($.index ===3){
-          await notify.sendNotify(`${$.name} - 账号${$.index} - ${UserName}`, `${subTitle}\n${message}`, 1287926334);
-       }else if($.index ===4){
-          await notify.sendNotify(`${$.name} - 账号${$.index} - ${UserName}`, `${subTitle}\n${message}`, 1163117714);
-       }
-    }
+    // if ($.isNode()) {
+       // if($.index ===1){
+          // await notify.sendNotify(`${$.name} - 账号${$.index} - ${UserName}`, `${subTitle}\n${message}`, 2803242565);
+       // }else if($.index ===2){
+          // await notify.sendNotify(`${$.name} - 账号${$.index} - ${UserName}`, `${subTitle}\n${message}`, 997146461);
+       // }else if($.index ===3){
+          // await notify.sendNotify(`${$.name} - 账号${$.index} - ${UserName}`, `${subTitle}\n${message}`, 1287926334);
+       // }else if($.index ===4){
+          // await notify.sendNotify(`${$.name} - 账号${$.index} - ${UserName}`, `${subTitle}\n${message}`, 1163117714);
+       // }
+    //}
     // if ($.isNode()) {
     //   await notify.BarkNotify(`${$.name}`, `${subTitle}\n${message}`);
     // }
