@@ -71,14 +71,17 @@ if ($.isNode()) {
             // await notify.BarkNotify(`账户${$.index} ${UserName}京豆签到`, `【签到时间】： ${beanSignTime}\n${BarkContent}`);
             // BarkContent = BarkContent.replace(/[\n\r]/g, '\n\n');
             if($.index ===1){
-              await notify.sendNotify(`账号${$.index} ${UserName}京豆签到`, `【签到时间】:  ${beanSignTime}\n${BarkContent}`, 2803242565);
+              // await notify.sendNotify(`账号${$.index} ${UserName}京豆签到`, `【签到时间】:  ${beanSignTime}\n${BarkContent}`, 2803242565);
+			  await notify.sendNotify(`账号${$.index} 京豆签到成功`, `【签到时间】:  ${beanSignTime}`, 2803242565);
             }else if($.index ===2){
-              await notify.sendNotify(`账号${$.index} ${UserName}京豆签到`, `【签到时间】:  ${beanSignTime}\n${BarkContent}`, 997146461);
+              // await notify.sendNotify(`账号${$.index} ${UserName}京豆签到`, `【签到时间】:  ${beanSignTime}\n${BarkContent}`, 997146461);
+			  await notify.sendNotify(`账号${$.index} 京豆签到成功`, `【签到时间】:  ${beanSignTime}`, 997146461);
             }else if($.index ===3){
-              await notify.sendNotify(`账号${$.index} ${UserName}京豆签到`, `【签到时间】:  ${beanSignTime}\n${BarkContent}`, 1287926334);
+              // await notify.sendNotify(`账号${$.index} ${UserName}京豆签到`, `【签到时间】:  ${beanSignTime}\n${BarkContent}`, 1287926334);
+			  await notify.sendNotify(`账号${$.index} 京豆签到成功`, `【签到时间】:  ${beanSignTime}`, 1287926334);
             }else if($.index ===4){
-              await notify.sendNotify(`账号${$.index} ${UserName}京豆签到`, `【签到时间】:  ${beanSignTime}\n${BarkContent}`, 1163117714);
-       }
+              // await notify.sendNotify(`账号${$.index} ${UserName}京豆签到`, `【签到时间】:  ${beanSignTime}\n${BarkContent}`, 1163117714);
+       }	  await notify.sendNotify(`账号${$.index} 京豆签到成功`, `【签到时间】:  ${beanSignTime}`, 1163117714);
           }
         }
         //运行完成后，删除下载的文件
