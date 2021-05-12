@@ -81,7 +81,8 @@ if ($.isNode()) {
 			  await notify.sendNotify(`账号${$.index} 京豆签到成功`, `【签到时间】:  ${beanSignTime}`, 1287926334);
             }else if($.index ===4){
               // await notify.sendNotify(`账号${$.index} ${UserName}京豆签到`, `【签到时间】:  ${beanSignTime}\n${BarkContent}`, 1163117714);
-       }	  await notify.sendNotify(`账号${$.index} 京豆签到成功`, `【签到时间】:  ${beanSignTime}`, 1163117714);
+		    	  await notify.sendNotify(`账号${$.index} 京豆签到成功`, `【签到时间】:  ${beanSignTime}`, 1163117714);
+       	    }	 
           }
         }
         //运行完成后，删除下载的文件
